@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+        .header-nav {
+            display: flex;
+            justify-content: right;
+            padding: 20px 30px;
+            align-items: center;
+        }
+
+        .header-nav a {
+            margin-right: 20px;
+            color: rgb(0, 0, 0, 0.87);
+            font-size: 15px;
+            text-decoration: inherit;
+        }
+
+        .header-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            font-size: small;
+            float: left;
+            margin: 10px;
+        }
+
+        .top-bar h1{
+            font-size:1.5rem;
+            color:#ff4400;
+            margin: 20px;
+        }
+
+        .top-bar{
+            border-bottom:1px solid #d9d9d9;
+           
+        }
+
+        .main_div{
+            margin:10px 5vh;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main_div .column .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:5px 5px;
+            margin:5px 0px;
+            min-height: 25px;
+        }
+
+        .column .row input{
+            min-width:75%;
+            height:25px;
+            padding:2px 10px;
+            border:1px solid #000;
+        }
+
+        .column .row input:focus{
+            box-shadow:inset 0 0 2px .5px #2233ff;
+        }
+
+        .column .first{
+            font-size:1.1rem;
+        }
+
+        .column .row label{
+            font-size:14px;
+        }
+
+        .column1{
+            width:70%;
+        }
+
+        .column2{
+            display: flex;
+            width:30%;
+            align-items:flex-start;
+            flex-direction: column;
+        }
+
+        .column2 .row p{
+            font-size:10px;
+            line-height:25px;
+            color:#334422bb;
+        }
+
+        .main_div .btn {
+            color: #fff;
+            background-color: #357ae8;
+            margin: 10px 0;
+            float: right;
+            border: 1px solid #2f5bb7;
+            width: 120px;
+            height: 30px;
+        }
+
+        
+
+       
+        
+    </style>
+</head>
+<body>
+	<form action="https://www.google.com/search">
+        
+        <div class="logo">
+                <H1><span style="color: #4285f4;">G</span><span style="color: #EA4335;">o</span><Span style="color:#FBBC05">o</Span><span style="color:#4285f4;">g</span><span style="color:#34A853;">l</span><span style="color: #EA4335;">e</span></H1>
+        </div> 
+        <div class="header-nav">
+            <a href="index.html">Google Search</a>
+        </div>
+	
+        <div class="top-bar">
+            <h1>Advanced Search</h1>
+	    </div>
+	
+	<div class="main_div">
+		
+			<div class="column column1">
+
+				<span class="first">
+					Find pages with...
+				</span>
+
+				<div class="row">
+					<label for="first">all these words:</label>
+					<input type="text" id="first" name="as_q" />
+				</div>
+				<div class="row">
+					<label for="second">this exact word or phrase:</label>
+					<input type="text" id="second" name="as_epq" />
+				</div>
+				<div class="row">
+					<label for="third">any of these words:</label>
+					<input type="text" id="third" name="as_oq" />
+				</div>
+				<div class="row">
+					<label for="fourth">none of these words:</label>
+					<input type="text" id="fourth" name="as_eq" />
+				</div>
+				<button class ="btn" type="submit" style="align-self: right;">Advanced Search</button>
+			</div>
+
+
+			<div class="column column2">
+				<span class="first">
+					To do this in the search box.
+				</span>
+
+
+				<div class="row">
+					<p>Type the important words: tri-colour rat terrier</p>
+				</div>
+
+				<div class="row">
+					<p>Put exact words in quotes: "rat terrier"</p>
+				</div>
+
+				<div class="row">
+					<p>Type OR between all the words you want: miniature OR standard</p>
+				</div>
+
+				<div class="row">
+					<p>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</p>
+				</div>
+			</div>
+
+			
+	
+		</div>
+		
+	</form>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header-nav {
+            display: flex;
+            justify-content: right;
+            padding: 20px 30px;
+            align-items: center;
+        }
+        
+        .header-nav a {
+            margin-right: 20px;
+            color: rgb(0, 0, 0, 0.87);
+            font-size: 15px;
+            text-decoration: inherit;
+        }
+
+        .header-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            margin-top: 8%;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid lightgray;
+            height: 30px;
+            padding: 10px 20px;
+            border-radius: 999px;
+            width: 75vh;
+            margin: 0 auto;
+            max-width: 560px;
+        }
+        .search-box input {
+            flex: 1;
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+        }
+        
+        .search-btn {
+            display: inline-block;
+            width: 180px;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: none;
+            height: 36px;
+            padding: 10 20px;
+            margin: 0 4px;
+            
+            
+            
+           
+                
+        }
+        .search-btn:hover {
+            cursor: pointer;
+            box-shadow: 0 0 10px 0 gainsboro;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="header-nav">
+        <a href="http://localhost:8080/imageSearch.html">Image Search</a>
+        <a href="http://localhost:8080/advancedSearch.html">Advanced Search</a>
+    </div>
+        
+        
+        
+    
+    
+    <div class="main">
+        <div class="logo">
+            <H1><span style="color: #4285f4;">G</span><span style="color: #EA4335;">o</span><Span style="color:#FBBC05">o</Span><span style="color:#4285f4;">g</span><span style="color:#34A853;">l</span><span style="color: #EA4335;">e</span></H1>
+        </div>
+        <div>
+            <form action="https://www.google.com/search">
+                <input class="search-box" type="text" name="q" placeholder="Enter your search"/>
+                <input class = "search-btn" type="submit" value="Google Search"/>
+                <input class= "search-btn" type="submit" name="btnI" value="I'm Feeling Lucky" />
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
